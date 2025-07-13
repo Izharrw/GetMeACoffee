@@ -60,7 +60,7 @@ export const authoptions = NextAuth({
       console.log("profile:", profile);
       console.log("email:", email);
       if (account.provider == "github") {
-        await mongoose.connect("mongodb://localhost:27017/coffee")
+        await mongoose.connect("mongodb+srv://izharwarsi2233:12izhar12@izhar.fjbtjes.mongodb.net/?retryWrites=true&w=majority&appName=Izhar")
         const userEmail = user?.email || profile?.email || email;
         if (!userEmail) {
           throw new Error("Email is required to create a user.");
