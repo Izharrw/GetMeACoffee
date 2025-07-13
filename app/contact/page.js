@@ -6,7 +6,7 @@ const page = () => {
     <section className="p-6">
       <div className="flex flex-col text-white justify-center items-center pt-10 gap-10">
         <h1 className="font-bold text-5xl font-sans">Contact Us</h1>
-        <span className="mt-10 font-bold ">We'd love to hear it from You!</span>
+        <span className="mt-10 font-bold ">We`&apos;`d love to hear it from You!</span>
         <span>
           If you have any questions, feedback, or need support, feel free to
           reach out to us:

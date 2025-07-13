@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
     <div className="flex justify-center flex-col items-center text-white h-[50vh] gap-4 px-2">
-      <div className="font-bold md:text-5xl text-3xl flex justify-center items-center md:gap-1 bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent ">Get Me a Coffee <span><img className="md:w-20 w-14 max-w-full h-auto" src="/coffee.gif"  alt="" /></span></div>
+      <div className="font-bold md:text-5xl text-3xl flex justify-center items-center md:gap-1 bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent ">Get Me a Coffee <span><Image className="md:w-20 w-14 max-w-full h-auto" src="/coffee.gif"  alt="" /></span></div>
       <p className="text-center text-smmd:text-lg">
         A platform to support your favorite creators by buying them coffee. 
         <br />
@@ -23,17 +23,17 @@ export default function Home() {
       </h1>
       <div className="flex md:gap-5 gap-10 space-y-7 justify-around md:flex-row flex-col">
         <div className="item flex flex-col space-y-1 justify-center items-center">
-          <img className="bg-slate-400 rounded-full p-2 " width={60} src="/lightning.gif" alt="" />
+          <Image className="bg-slate-400 rounded-full p-2 " width={60} src="/lightning.gif" alt="" />
           <p className="font-bold">Fund Your Ideas</p>
           <p className="text-center">Design your innovative ideas</p>
         </div>
         <div className="item flex flex-col space-y-1 justify-center items-center">
-          <img className="bg-slate-400 rounded-full" width={60} sizes="20px" src="/coin.gif" alt="" />  
+          <Image className="bg-slate-400 rounded-full" width={60} sizes="20px" src="/coin.gif" alt="" />  
           <p className="font-bold">Fund Your Passion</p>
           <p className="text-center">Fund Your Friends</p>
         </div>
         <div className="item flex flex-col space-y-1 justify-center items-center">
-          <img className="bg-slate-400 rounded-full p-2 " width={60} src="/group.gif" alt="" />
+          <Image className="bg-slate-400 rounded-full p-2 " width={60} src="/group.gif" alt="" />
           <p className="font-bold">Fund Your Team</p>
           <p className="text-center">Fund Your Community</p>
         </div>
@@ -56,7 +56,7 @@ export default function Home() {
       <div className="flex justify-center items-center gap-24 mt-10 flex-col md:flex-row">
         <div className="flex flex-col space-y-5 justify-center items-center w-full md:w-1/4 border border-gray-700 p-8 rounded-lg bg-neutral-900/50">
           <div className="p-2 rounded-lg h-12 w-12 justify-center items-center flex" style={{ background: "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)", borderColor: "rgb(93, 79, 240)" }}>
-            <img className="invert" src="/tag.svg" alt="" />
+            <Image className="invert" src="/tag.svg" alt="" />
           </div>
           <h3 className="text-gray-400 text-lg">Easy Customization</h3>
           <p className="text-center text-gray-400 mb-7">
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col space-y-5 justify-center items-center w-full md:w-1/4 border border-gray-700 p-8 rounded-lg bg-neutral-900/50">
           <div className="p-2 rounded-lg h-12 w-12 justify-center items-center flex" style={{ background: "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)", borderColor: "rgb(93, 79, 240)" }}>
-            <img className="invert" src="/thunderbolt.svg" alt="" />
+            <Image className="invert" src="/thunderbolt.svg" alt="" />
           </div>
           <h3 className="text-gray-400 text-lg">High Performance</h3>
           <p className="text-center text-gray-400 mb-7">
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col space-y-5 justify-center items-center w-full md:w-1/4 border border-gray-700 p-8 rounded-lg bg-neutral-900/50">
           <div className="p-2 rounded-lg h-12 w-12 justify-center items-center flex" style={{ background: "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)", borderColor: "rgb(93, 79, 240)" }}>
-            <img className="invert" src="/pencil.svg" alt="" />
+            <Image className="invert" src="/pencil.svg" alt="" />
           </div>
           <h3 className="text-gray-400 text-lg">Comprehensive Features</h3>
           <p className="text-center text-gray-400 mb-7">

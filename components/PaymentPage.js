@@ -10,6 +10,7 @@ import { useEffect } from "react"
 import { useSearchParams } from "next/navigation"
 import { useRouter } from "next/navigation"
 import { useSession } from "next-auth/react"
+import Image from "next/image"
 
 
 const PaymentPage = ({ username }) => {
@@ -32,7 +33,7 @@ const PaymentPage = ({ username }) => {
 
   useEffect(() => {
     getData()
-  }, [])
+  }, [getdata])
 
   useEffect(() => {
     if (searchParams.get("paymentdone") == "true") {
@@ -112,14 +113,14 @@ const PaymentPage = ({ username }) => {
       <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
 
       <div className="cover w-full ">
-        <img
+        <Image
           className="w-full"
           src={currentuser.coverpic}
           alt=""
         />
         <div className="flex relative justify-center items-center">
           <div className="absolute -top-14 ">
-            <img
+            <Image
               className=" rounded-2xl w-20 md:w-30 h-20 md:h-30 border border-gray-500 shadow-black shadow-lg "
               src={currentuser.profilepic}
               alt=""
@@ -141,9 +142,9 @@ const PaymentPage = ({ username }) => {
             <ul className="mx-5 text-lg">
               {payments && payments.length > 0 ? payments.map((p, i) => (
                 <li key={i} className="flex justify-center items-start my-3 md:gap-2 text-sm md:text-lg">
-                  <img width={33} src="/avatar.gif" alt="user avatar" />
+                  <Image width={33} src="/avatar.gif" alt="user avatar" />
                   <div>
-                  {p.name} donated <span className="font-bold text-sm md:text-lg">₹{p.amount}</span> with a message "{p.message}"
+                  {p.name} donated <span className="font-bold text-sm md:text-lg">₹{p.amount}</span> with a message `&quot;`{p.message}`&quot;`
                   </div>
                 </li>
               )) : <li>No supporters yet.</li>}

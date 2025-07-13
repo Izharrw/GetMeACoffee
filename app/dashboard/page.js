@@ -1,6 +1,8 @@
 
 "use client"
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { useState } from 'react'
+import { useEffect } from 'react'
 import { useSession, signIn, signOut } from "next-auth/react"
 import { useRouter } from 'next/navigation'
 import { fetchuser, updateProfile } from '@/actions/useractions'
@@ -28,7 +30,7 @@ const DashboardPage = () => {
         } else {
             getData();
         }
-    }, [router, session]);
+    }, [session, router]);
 
     const defaultForm = {
         name: "",

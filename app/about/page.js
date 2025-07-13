@@ -7,13 +7,13 @@ const page = () => {
         <h1 className="font-bold text-4xl font-sans">About Us</h1>
         <div className="w-full mx-auto text-center space-y-10 px-4">
           <h2 className="text-center font-bold text-lg mt-4">
-            "Fueling Creativity, One Coffee at a Time!"
+            `&quot;`Fueling Creativity, One Coffee at a Time!`&quot;`
           </h2>
           <p>
             Welcome to our coffee shop, where we believe that every great idea
             starts with a great cup of coffee. Our mission is to create a cozy
             and inspiring environment for artists, writers, and dreamers alike.
-            Whether you're here to sketch, write, or simply enjoy the aroma of
+            Whether you`&apos;`re here to sketch, write, or simply enjoy the aroma of
             freshly brewed coffee, we have something special for you.
           </p>
           <p>
@@ -55,7 +55,7 @@ const page = () => {
             <p className="text-center text-lg">
               Our mission is to empower talented individuals by facilitating
               financial support, allowing them to focus on what they do best –
-              creating. Whether you're a developer coding the next big app, a
+              creating. Whether you`&apos;`re a developer coding the next big app, a
               content creator making engaging videos, or an influencer sharing
               your passion, <span className="font-bold">Get Me a Coffee</span>{" "}
               is here to help you achieve your goals.

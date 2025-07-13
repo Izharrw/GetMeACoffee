@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -23,7 +24,7 @@ const Footer = () => {
         <div>
           <Link href="https://github.com/Izharrw" target="_blank">
           <div className='flex items-center gap-2 hover:bg-[#341b74] cursor-pointer p-2 rounded-full border'>
-          <img className='invert' width={24} src="/github.svg" alt="" />
+          <Image className='invert' width={24} src="/github.svg" alt="" />
           <span>GitHub</span>
           </div>
           </Link>
@@ -31,7 +32,7 @@ const Footer = () => {
           <div>
             <Link href="https://www.linkedin.com/in/izharwarsi/" target="_blank">
             <div className='flex items-center gap-2 hover:bg-[#341b74] cursor-pointer p-2 rounded-full border'>
-          <img className='invert' width={24} src="/linkedin.svg" alt="" />
+          <Image className='invert' width={24} src="/linkedin.svg" alt="" />
           <span>LinkedIn</span>
           </div>
           </Link>
