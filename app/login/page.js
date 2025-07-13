@@ -24,7 +24,7 @@ const Page = () => {
       <div className="flex flex-col gap-2 min-h-[70vh] items-center  p-10">
 
 
-        <button
+        <button onClick={() => signIn("google")}
           className="flex cursor-pointer items-center w-64 bg-slate-50 text-black border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium  hover:bg-gray-200 focus:outline-none ">
           <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="-0.5 0 48 48" version="1.1">
